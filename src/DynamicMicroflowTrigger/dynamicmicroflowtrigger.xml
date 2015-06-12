@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="DynamicMicroflowTrigger.widget.dynamicmicroflowtrigger" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Dynamic Microflow Trigger</name>
+    <description>Lets you create a microflow trigger with a dynamic attribute as caption.</description>
+    <icon>
+    iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhk
+    iAAAAAlwSFlzAAADdgAAA3YBfdWCzAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3Nj
+    YXBlLm9yZ5vuPBoAAAGsSURBVDiNpZM/SyNBGMafmdsdljWXRq4QJaIHZkVsDItR
+    7kMogoK94hUWV1x39V1xjSjBQg4/gfgZJI0QUttaBPHiJdlsloWZzLtjIRuzmHAB
+    B95i/ry/eZ73nWHGGLxnsK39/S8Afn/M5cr5fH6ipDAM0YuiWwDfLQAnRwcHpQ3f
+    xwfOJwJQkuC2ViufX1ycWI7jlLxiEX87HSRJMhGAcw7P8+C6bskSQiCIIgzXQiqF
+    p8dHzBUKYyExY3AcB5yIoLUGEQ2iLyXOKhVcX10h6vUye2mkORYAaK0zdK01pJS4
+    qVZRq9exs72NldVVMMbeKLGMMSMBSikAgFIKfy4v4RWL2NvdRW6oU8aYFwVElK0y
+    EaSUg7kQApu+j9mZGbTDMKtgnIVUwbrv4+vhIWKl0Gy3M+eMMaMtEBGmXBffjo/x
+    eWkJrSB4432ggDEGrXWmQMK2UTk9xb8gwFOrNTIxbbtl2za63S5c1wUfeokPzebY
+    W5MkQRzHEELAWpyfv2s0GsujWvS/sVAo3Fn+2tpPIvrR6nQWZL8/oAzjXhdZatF8
+    mp6+55z/Yu/9zs+e29iUS1YO2wAAAABJRU5ErkJggg==
+    </icon>
+    <properties>
+        <property key="name" type="attribute" required="true" isPath="optional" pathType="reference">
+            <caption>Attribute</caption>
+            <category>Data source</category>
+            <description>The attribute to display.</description> 
+            <attributeTypes>
+              <attributeType name="AutoNumber"/>
+  						<attributeType name="Integer"/>
+  						<attributeType name="Long"/>
+  						<attributeType name="String"/>                
+              <attributeType name="Enum"/> 
+            </attributeTypes>
+        </property>
+        <property key="onclickmf" type="microflow" required="true">
+            <caption>On click Microflow</caption>
+            <category>Data source</category>
+            <description>The microflow to execute on click.</description> 
+            <returnType type="Void"/>
+        </property>
+        <property key="buttonIcon" type="image" required="false">
+            <caption>Image</caption>
+            <category>Appearance</category>
+            <description>The button image.</description>  
+        </property>
+        <property key="showAsButton" type="enumeration" required="true" defaultValue="Button">
+            <caption>Render as</caption>
+            <category>Appearance</category>
+            <description>Show as a string or as a button.</description>
+            <enumerationValues>
+                <enumerationValue key="Button">Button</enumerationValue>
+                <enumerationValue key="Link">Link</enumerationValue>
+            </enumerationValues>    
+        </property>
+    </properties>
+</widget>
