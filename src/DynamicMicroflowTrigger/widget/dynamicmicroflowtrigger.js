@@ -1,5 +1,5 @@
 dojo.provide("DynamicMicroflowTrigger.widget.dynamicmicroflowtrigger");
-dojo.require("dijit.form.button")
+dojo.require("dijit.form.Button")
 
 dojo.declare("DynamicMicroflowTrigger.widget.dynamicmicroflowtrigger", mxui.widget._WidgetBase, {
 	mixins : [ dijit._Contained, mendix.addon._Contextable, mxui.mixin._Scriptable ],
